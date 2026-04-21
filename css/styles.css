@@ -153,3 +153,68 @@ footer {
 body {
     overflow-x: hidden;
 }
+
+/* ===== MENÚ HAMBURGUESA ===== */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ===== RESPONSIVE PRO ===== */
+@media (max-width: 768px) {
+
+    /* Ajuste general */
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    /* NAV */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #020617;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Mostrar botón hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Cuando el menú esté activo */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* TARJETAS */
+    #proyectos div,
+    #desarrollo div {
+        padding: 15px;
+    }
+
+    /* BOTONES */
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
