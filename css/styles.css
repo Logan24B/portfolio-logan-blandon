@@ -149,3 +149,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+body {
+    overflow-x: hidden;
+}
